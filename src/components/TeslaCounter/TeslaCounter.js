@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'react';
 import './TeslaCounter.css';
-
 const TeslaCounter = (props) => (
   <div className="tesla-counter">
     <p className="tesla-counter__title">{props.initValues.title}</p>

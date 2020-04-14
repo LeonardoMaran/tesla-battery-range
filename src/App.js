@@ -21,6 +21,7 @@ const counterDefaultVal = {
 };
 
 const App = () => {
+
   return (
     <div>
       <Header />
