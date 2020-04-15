@@ -48,6 +48,7 @@ export const changeWheel = (value) => {
     value
   }
 }
+
 export const updateStats = () => {
   return {
     type: 'UPDATE_STATS'

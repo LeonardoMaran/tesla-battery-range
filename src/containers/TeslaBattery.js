@@ -9,7 +9,6 @@ import TeslaWheels from '../components/TeslaWheels/TeslaWheels';
 import { getModelData } from '../services/BatteryService';
 
 class TeslaBattery extends React.Component {
-
   constructor(props) {
     super(props);
 
@@ -77,6 +76,7 @@ class TeslaBattery extends React.Component {
       maxValue = temperature.max;
       step = temperature.step;
     }
+
     if (currentValue < maxValue) {
       const newValue = currentValue + step;
       this.updateCounterState(title, newValue);
@@ -96,6 +96,7 @@ class TeslaBattery extends React.Component {
       minValue = temperature.min;
       step = temperature.step;
     }
+
     if (currentValue > minValue) {
       const newValue = currentValue - step;
       this.updateCounterState(title, newValue);
@@ -115,7 +116,7 @@ class TeslaBattery extends React.Component {
     config['wheels'] = size;
     this.setState({ config }, () => {this.statsUpdate()});
   }  
-  
+
   render() {    
     const { config, carstats } = this.state;
     return (
@@ -153,4 +154,5 @@ class TeslaBattery extends React.Component {
     )
   }
 }
+
 export default TeslaBattery;

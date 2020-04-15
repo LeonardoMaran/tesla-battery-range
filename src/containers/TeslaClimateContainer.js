@@ -1,4 +1,4 @@
-import { changeClimate } from "../actions"
+import { changeClimate } from "../actions/index"
 import TeslaClimate from '../components/TeslaClimate/TeslaClimate';
 import { connect } from 'react-redux';
 
