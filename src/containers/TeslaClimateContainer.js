@@ -1,4 +1,6 @@
 import { changeClimate } from "../actions"
+import TeslaClimate from '../components/TeslaClimate/TeslaClimate';
+import { connect } from 'react-redux';
 
 const mapStateToProps =(state) => {
   return {
@@ -16,3 +18,5 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const TeslaClimateContainer = connect(mapStateToProps, mapDispatchToProps)(TeslaClimate)
+
+export default TeslaClimateContainer;

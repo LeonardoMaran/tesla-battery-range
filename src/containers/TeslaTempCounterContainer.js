@@ -1,9 +1,12 @@
 import { temperatureUp, temperatureDown } from "../actions"
+import TeslaCounter from '../components/TeslaCounter/TeslaCounter';
+import { connect } from 'react-redux';
+import { counterDefaultVal } from '../constants/counterDefaultVal';
 
 const mapStateToProps =(state) => {
   return {
     currentValue: state.config.temperature,
-    initValue: counterDefaultVal.temperature
+    initValues: counterDefaultVal.temperature
   }
 }
 
@@ -19,3 +22,5 @@ const mapDispatchToProps = (dispatch) => {
 }
 
 const TeslaTempCounterContainer = connect(mapStateToProps, mapDispatchToProps)(TeslaCounter)
+
+export default TeslaTempCounterContainer;
