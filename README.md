@@ -8,7 +8,7 @@ The app provides Tesla's car battery range depending on speed, outside temperatu
 
 #### Demo: http://tesla-battery-range-app.surge.sh/
 
-![](/src/assets/tesla.gif.sb-01bf42ce-1SVfmp)
+![](/src/assets/tesla.gif)
 
 ## Installation
 
