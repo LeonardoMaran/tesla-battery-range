@@ -2,7 +2,7 @@
 
 # Tesla Battery Range Calculator :car: 
 
-This is a **mobile friendly :iphone: single-page Web application** developed with React & Redux :computer:.  
+This is a single-page Web application** developed with React & Redux :computer:.  
 
 The app provides Tesla's car battery range depending on speed, outside temperature, air conditioner (cooling and heating) and wheels size (19' and 21').
 
